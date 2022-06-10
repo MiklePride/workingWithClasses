@@ -10,27 +10,27 @@
 
 class Player
 {
-    public string NamePlayer;
-    public int AgePlayer;
-    public string NameCharacter;
-    public string ClassCharacter;
-    public int LevelCharacter;
+    private string _namePlayer;
+    private int _agePlayer;
+    private string _nameCharacter;
+    private string _classCharacter;
+    private int _levelCharacter;
 
     public Player()
     {
-        NamePlayer = "Стёпа";
-        AgePlayer = 10;
-        NameCharacter = "МамкинНагибатель666";
-        ClassCharacter = "Мечник";
-        LevelCharacter = 94;
+        _namePlayer = "Стёпа";
+        _agePlayer = 10;
+        _nameCharacter = "МамкинНагибатель666";
+        _classCharacter = "Мечник";
+        _levelCharacter = 94;
     }
 
     public void ShowPlayerInformation()
     {
-        Console.WriteLine($"Имя игрока - {NamePlayer}" +
-            $"\nВозраст игрока - {AgePlayer} лет" +
-            $"\nИмя персонажа - {NameCharacter}"+
-            $"\nКласс персонажа - {ClassCharacter}" +
-            $"\nУровень персонажа - {LevelCharacter}");
+        Console.WriteLine($"Имя игрока - {_namePlayer}" +
+            $"\nВозраст игрока - {_agePlayer} лет" +
+            $"\nИмя персонажа - {_nameCharacter}"+
+            $"\nКласс персонажа - {_classCharacter}" +
+            $"\nУровень персонажа - {_levelCharacter}");
     }
 }
